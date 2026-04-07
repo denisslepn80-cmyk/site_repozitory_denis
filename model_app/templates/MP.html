@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{% static 'style.MP.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш магазин!</h1>
+        <p>Адрес: г. Улан-Удэ пр. Автомобилистов, 4а/1</p>
+        <p>Режим работы: Пн-Вс, Круглосуточно </p>
+    </header>
+
+    <main>
+        <input type="text" placeholder="Поиск продукции..." class="search-input">
+        <h2>Акции</h2>
+        <p>Скидки до 60% на некоторые товары!</p>
+    </main>
+
+    <div>
+        <a>О компании</a>
+        <a>Покупателлям</a>
+        <h2>Поддержка клиентов</h2>
+        <h3>круглосуточно</h3>
+        <h2>Бесплатный номер
+по всей России
+8 (800) 700-41-11
+info@lenta.com</h2>
+
+    </div>
+
+    <footer>
+        <nav>
+                <a href="/MP">Главная</a>
+                <a href="/Catalog">Каталог</a>
+                <a href="/Shopping_cart">Корзина</a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #008080;
+}
+
+header {
+    background: #000080;
+    color: #FFD700;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.search-input {
+    margin: 20px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+main {
+    padding: 20px;
+    background: #c0c0c0;
+    margin: 20px;
+    border-radius: 5px;
+    display: block;
+    unicode-bidi: isolate;
+
+}
+
+.container {
+  display: grid;
+  /* Разделение на два равных блока (50% / 50%) */
+  grid-template-columns: 1fr 3fr;
+  /* Отступ между блоками (по желанию) */
+  gap: 20px;
+}
+
+.filter-container, .card-container{
+
+
+  padding: 20px;
+  background-color: #A9A9A9;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+  }
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+.product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    background: #000080;
+    color: #FFD700;
+
+
+    width: 100%;
+
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+footer>nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10 px;
+    width: 100%;
+    color: #FFD700;
+}
+
+nav>a {
+    color: #FFD700;
+
+}

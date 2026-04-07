@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  href="{% static 'style1.css' %}">
+</head>
+<body>
+
+<div class="c">
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+            <button type="submit">Оправить</button>
+        </form>
+        <br>
+
+            <select >
+                {% for user in users %}
+
+                    <option>{{user.username}} {{user.name}} {{user.age}}</option>
+                {% endfor %}
+            </select>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="{% static "style.MP.css" %}">
+</head>
+<body>
+   <header>
+        <h1>Каталог товаров</h1>
+   </header>
+
+   <div class="container">
+
+        <div class="filter-container">
+
+            <input type="text" placeholder="Поиск продукции..." class="search-input">
+            <h2>Категории</h2>
+            <button>Мясо</button>
+            <button>Рыба</button>
+        </div>
+
+        <div class="card-container">
+            <h2>Продукция</h2>
+
+            <div class="product-grid">
+                  {% for product in products %}
+                  <div class="product-card">
+                    <img src="images/3.jpg" alt="Фото">
+                    <h3>Название товара</h3>
+                    <p>Цена: 1000 руб.</p>
+                    <button>Купить</button>
+                  </div>
+                  {% endfor %}
+            </div>
+
+        </div>
+   </div>
+
+    <footer>
+        <nav>
+
+                <a href="/MP">Главная</a>
+                <a href="/Catalog">Каталог</a>
+                <a href="/Shopping_cart">Корзина</a>
+
+        </nav>
+    </footer>
+</body>
+
+</html>

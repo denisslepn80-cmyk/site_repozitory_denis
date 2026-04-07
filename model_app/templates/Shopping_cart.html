@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="{% static 'style.MP.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Ваша корзина</h1>
+    </header>
+
+    <main>
+        <h2>Товары в вашей корзине</h2>
+
+
+                Товар 1 - <span class="price">1000 руб.</span><br>
+                <button>Добавить товар</button><br>
+                <button>Убрать товар</button><br>
+
+
+                Товар 2 - <span class="price">2000 руб.</span><br>
+                <button>Добавить товар</button><br>
+                <button>Убрать товар</button><br>
+
+
+        <p>Итого: <span class="total-price">3000 руб.</span></p><br>
+        <button class="clear-cart">Очистить корзину</button><br>
+        <button class="checkout">Оформить заказ</button><br>
+    </main>
+
+    <footer>
+        <nav>
+
+                <a href="/MP" >Главная</a>
+                <a href="/Catalog">Каталог</a>
+                <a href="/Shopping_cart">Корзина</a>
+
+        </nav>
+    </footer>
+</body>
+</html>
